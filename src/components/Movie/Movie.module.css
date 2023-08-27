@@ -1,0 +1,41 @@
+
+
+  .album {
+   /*  background: rgba(72, 61, 139, 0.9); */
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+   /*  padding: 1.5em; */
+    border-radius: 1em;
+    display: grid;
+    /* grid-template-columns: 150px 1fr; */
+    gap: 1.5em;
+    align-items: center;
+    color: white;
+    font-weight: 100;
+    height: 460px;
+    overflow: hidden;
+  }
+  
+
+  .album__artwork {
+    width: 100%;
+    border-radius: 0.4em;
+    height: 460px;
+  }
+  .album:hover img{
+    transform:scale(1.1);
+    cursor: pointer;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.25em;
+  }
+  
+  .album__artist {
+    opacity: 0.7;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+    font-style: oblique;
+    letter-spacing: .7px;
+  }

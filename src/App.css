@@ -2,37 +2,56 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.search-field {
+  border-radius: 50px 0 0 50px !important;
+  border-color: transparent !important;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2) !important;
+  background-color: #3a3f47;
+  height: 100%;
+  width: 90%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.search-btn {
+  border-radius: 0 50px 50px 0 !important;
+  height: 100%;
+  width: 13%;
+  background-color: #3a3f47;
   color: white;
+  border: 0;
+}
+.search-container{
+ 
+  box-sizing: border-box;
+  display:flex;
+}
+.search-container {
+    border-radius: 20px;
+    border: 0px;
+    height: 40px;
+    width: 50%;
+    margin: 35px auto;
 }
 
-.App-link {
-  color: #61dafb;
+input:focus-visible {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus-visible form{
+  border: 1px solid;
+}
+
+
+input[type="search"]::-webkit-search-cancel-button {
+ 
+  background-color: red;
+  color: white !important;
+  font-weight: bold;
+ 
+}
+
+input[type="search"] {
+  color: #ddd;
+  font-size: 18px;
+      padding: 15px;
 }
